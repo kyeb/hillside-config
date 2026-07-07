@@ -19,10 +19,18 @@
 #
 ---
 include:
+  # Original Hillside 46 — no display
   - board: nice_nano/nrf52840/zmk
     shield: hillside46_left
   - board: nice_nano/nrf52840/zmk
     shield: hillside46_right
+  # beekeeb Hillside 46 — nice!view displays
+  - board: nice_nano/nrf52840/zmk
+    shield: hillside46_left nice_view_adapter nice_view
+    artifact-name: hillside46_left_nice_view
+  - board: nice_nano/nrf52840/zmk
+    shield: hillside46_right nice_view_adapter nice_view
+    artifact-name: hillside46_right_nice_view
   # Uncomment to build a `reset` firmware, for doing a full reset
   - board: nice_nano/nrf52840/zmk
     shield: settings_reset
